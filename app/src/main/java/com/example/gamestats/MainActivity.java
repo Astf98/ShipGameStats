@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //player id
                 JSONObject jsonObject1 = new JSONObject(data);
-                String playerid = jsonObject1.getString("503790290");
+                String playerid = jsonObject1.getString(data.substring(2,11));
 
                 //statystyki
                 JSONObject jsonObject2 = new JSONObject(playerid);
